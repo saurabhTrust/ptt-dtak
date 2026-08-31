@@ -1,0 +1,17 @@
+{
+  "name": "walkie-talkie-server",
+  "version": "1.0.0",
+  "description": "Standalone Gun relay (signaling + presence) for the walkie-talkie PTT app",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "gun": "^0.2020.1240"
+  }
+}
