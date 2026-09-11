@@ -34,7 +34,8 @@ const Gun = require('gun');
 const PORT       = parseInt(process.env.PORT, 10) || 8765;
 const HOST       = process.env.HOST || '0.0.0.0';
 const DATA_DIR   = process.env.DATA_DIR || path.join(__dirname, 'radata');
-const PERSIST    = process.env.PERSIST !== 'false';
+// const PERSIST    = process.env.PERSIST !== 'false';
+const PERSIST    = false; // ephemeral (no disk) by default
 const PUBLIC_DIR = process.env.PUBLIC_DIR || path.join(__dirname, 'public');
 
 const app = express();
