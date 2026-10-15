@@ -66,7 +66,7 @@ const server = app.listen(PORT, HOST, () => {
 });
 
 // Attach Gun to the same HTTP server (shares the port; upgrades to WebSocket).
-const gunOptions = { web: server };
+const gunOptions = { web: server, axe: false, multicast: false, file: false, localStorage: false };
 if (PERSIST) { gunOptions.radisk = true; gunOptions.file = DATA_DIR; }
 else         { gunOptions.radisk = false; gunOptions.localStorage = false; }
 
